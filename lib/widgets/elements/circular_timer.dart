@@ -1,11 +1,9 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 
 class CircularTimer extends StatelessWidget {
   final int remainingTime;
-  CircularTimer(this.remainingTime);
+  const CircularTimer(this.remainingTime);
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +16,7 @@ class CircularTimer extends StatelessWidget {
       strokeWidth: 8.0,
       strokeCap: StrokeCap.round,
       isReverse: true,
-      onComplete: () {
-        //TODO: add code to perform actions when the time is up
-      },
+      onComplete: () {},
       textStyle: const TextStyle(fontSize: 15.0, color: Colors.black),
     );
   }

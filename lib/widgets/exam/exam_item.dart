@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import '../../view_models/v_userExam.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import '../../screens/exam_screen.dart';
-import '../elements/confirm_alert.dart';
 import 'package:provider/provider.dart';
 import '../../providers/UserExams.dart';
-import '../../data/database_helper.dart';
 
-//-------------------------------------------------------------------------------------------------------------------
 class ExamItem extends StatelessWidget {
   //-------------- feilds ---------------
   final VUserExam exam;
   final int index;
   // final Function startUserExam;
   const ExamItem({
+    super.key,
     required this.exam,
     required this.index,
     // required this.startUserExam,

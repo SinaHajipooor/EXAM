@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 
 import './faragir_screen.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +13,8 @@ import '../widgets/elements/spinner.dart';
 class AuthenticateScreen extends StatefulWidget {
   // ---------------- feilds ------------------
   static const routeName = '/authenticate';
+
+  const AuthenticateScreen({super.key});
   @override
   State<AuthenticateScreen> createState() => _AuthenticateScreenState();
 }

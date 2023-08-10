@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 class ProfileScreen extends StatefulWidget {
   // ------------- feilds ---------------
   static const routeName = '/profile';
+
+  const ProfileScreen({super.key});
   @override
   _ProfileScreenState createState() => _ProfileScreenState();
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
   // ------------- state ---------------
+  // ignore: unused_field
   String _name = '';
+  // ignore: unused_field
   String _phoneNumber = '';
   // ------------- UI ---------------
 

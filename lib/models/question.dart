@@ -1,5 +1,3 @@
-import 'dart:io';
-
 class Question {
   // feilds
   final int id;

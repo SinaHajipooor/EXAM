@@ -8,10 +8,11 @@ import './answers_list_wrapper.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 //---------------------------------------------------------------------------------------------------------------------
+// ignore: must_be_immutable
 class QuestionsList extends StatefulWidget {
   //--------------- feilds ------------------
   int examId;
-  QuestionsList(this.examId);
+  QuestionsList(this.examId, {super.key});
 
   @override
   _QuestionsListState createState() => _QuestionsListState();
