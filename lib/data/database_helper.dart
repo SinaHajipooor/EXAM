@@ -32,11 +32,9 @@ class DatabaseHelper {
 
     // Open the database
     return await openDatabase(
-      databasePath, version: 1, readOnly: false,
-      // onCreate: (Database db, int version) async {11101
-      //   // Create the exams table
-      //   await db.execute('CREATE TABLE $_tableName (id INTEGER PRIMARY KEY AUTOINCREMENT, subject TEXT, score INTEGER)');
-      // },
+      databasePath,
+      version: 1,
+      readOnly: false,
     );
   }
 
